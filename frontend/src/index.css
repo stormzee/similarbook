@@ -1,0 +1,90 @@
+/* Global reset and theme */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --secondary: #22d3ee;
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --surface2: #293548;
+  --border: #334155;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --danger: #ef4444;
+  --success: #22c55e;
+  --radius: 12px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  transition: background 0.2s, transform 0.1s;
+}
+button:active { transform: scale(0.97); }
+
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary:hover { background: var(--primary-hover); }
+.btn-secondary { background: var(--surface2); color: var(--text); border: 1px solid var(--border); }
+.btn-secondary:hover { background: var(--border); }
+.btn-danger { background: var(--danger); color: #fff; }
+.btn-sm { padding: 0.35rem 0.85rem; font-size: 0.8rem; }
+
+input, textarea, select {
+  width: 100%;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+input:focus, textarea:focus { border-color: var(--primary); }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.badge {
+  display: inline-block;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+.badge-primary { background: rgba(99,102,241,0.2); border-color: var(--primary); color: var(--primary); }
+
+.error-text { color: var(--danger); font-size: 0.85rem; margin-top: 0.25rem; }
+.muted { color: var(--text-muted); font-size: 0.85rem; }
+
+.spinner {
+  width: 24px; height: 24px;
+  border: 3px solid var(--border);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }

@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Env
+.env
+!backend/.env.example
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model cache (large files)
+*.bin
+*.pt
+*.safetensors
+sentence_transformers/

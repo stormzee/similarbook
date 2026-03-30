@@ -1,0 +1,34 @@
+.profile-container {
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-avatar {
+  width: 72px; height: 72px;
+  background: var(--primary);
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.profile-info { flex: 1; }
+.profile-name { font-size: 1.3rem; font-weight: 700; }
+.profile-bio { margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9rem; }
+
+.profile-actions { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
+
+.profile-tasks-heading { font-size: 1.05rem; font-weight: 700; margin-bottom: 1rem; }

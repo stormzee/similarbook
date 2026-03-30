@@ -1,0 +1,11 @@
+.feed-container {
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.feed-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}

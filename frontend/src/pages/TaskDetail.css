@@ -1,0 +1,22 @@
+.task-detail-container {
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.task-detail-main { margin-bottom: 2rem; }
+
+.task-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.task-detail-title { font-size: 1.4rem; font-weight: 700; }
+.task-detail-actions { display: flex; gap: 0.5rem; flex-shrink: 0; }
+.task-detail-author { display: block; margin-bottom: 1.25rem; font-size: 0.85rem; }
+.task-detail-description { line-height: 1.65; color: var(--text-muted); }
+
+.similar-heading { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; }
