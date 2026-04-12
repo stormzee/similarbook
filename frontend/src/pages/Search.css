@@ -1,0 +1,19 @@
+.search-container {
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.search-heading { font-size: 1.3rem; font-weight: 700; margin-bottom: 0.4rem; }
+.search-subtitle { margin-bottom: 1.25rem; }
+
+.search-bar {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-bar input { flex: 1; }
+.search-bar button { flex-shrink: 0; min-width: 90px; }
+
+.search-results { display: flex; flex-direction: column; }
